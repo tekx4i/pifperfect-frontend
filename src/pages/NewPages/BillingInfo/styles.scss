@@ -1,0 +1,26 @@
+.table-wrapper {
+    // max-height: 800px; /* Set the desired max height for scrolling */
+    max-height: 100vh; /* Set the desired max height for scrolling */
+
+    overflow-y: auto;
+    position: relative;
+    border: 1px solid #ddd; /* Optional: border for table wrapper */
+  }
+  
+  .table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-wrapper thead th {
+    position: sticky;
+    top: 0; /* Fix the header at the top */
+    z-index: 10; /* Ensure the header stays on top */
+    background-color: #f8f9fa; /* Optional: header background color */
+    border-bottom: 2px solid #dee2e6; /* Optional: border styling */
+  }
+  
+  .table-wrapper tbody td {
+    border-top: 1px solid #dee2e6; /* Optional: body row styling */
+  }
+  

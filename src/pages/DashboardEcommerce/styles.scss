@@ -1,0 +1,60 @@
+.security-header {
+  margin-bottom: 40px;
+  h5 {
+    font-family: var(--montserrat);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 34.5px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #252525;
+  }
+}
+
+.dashboard-select {
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  height: 40px !important;
+}
+
+#authenticate-repo {
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 0px;
+      border-bottom: 1px solid #f2f4f5;
+      margin: 0 29px;
+      &:last-child {
+        border-bottom: 0;
+      }
+      & > div {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22.08px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #252525;
+        align-self: center;
+      }
+      .detail-text {
+        background: #f6fafe;
+        border-radius: 8px;
+        padding: 10px 40px;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.94px;
+        letter-spacing: 0.016em;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #252525;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

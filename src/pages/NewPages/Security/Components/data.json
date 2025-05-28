@@ -1,0 +1,152 @@
+{
+    "success": true,
+    "message": "Permissions fetched successfully",
+    "payload": {
+        "allPermissions": [
+            {
+                "id": 1,
+                "name": "Users Role Permissions",
+                "createdAt": "2024-12-16T00:00:00.000Z",
+                "updatedAt": "2024-12-16T00:00:00.000Z",
+                "permissions": [
+                    {
+                        "id": 1,
+                        "name": "Can assign user role to any employee",
+                        "slug": "assign_userRole",
+                        "categoryId": 1,
+                        "createdAt": "2024-12-16T07:12:58.954Z",
+                        "role_permissions": []
+                    },
+                    {
+                        "id": 2,
+                        "name": "Can edit user details",
+                        "slug": "edit_user",
+                        "categoryId": 1,
+                        "createdAt": "2024-12-16T07:12:58.967Z",
+                        "role_permissions": []
+                    },
+                    {
+                        "id": 3,
+                        "name": "Can add / deactivate any active role",
+                        "slug": "add/deactive_user",
+                        "categoryId": 1,
+                        "createdAt": "2024-12-16T07:12:58.973Z",
+                        "role_permissions": []
+                    },
+                    {
+                        "id": 4,
+                        "name": "Can list new companies",
+                        "slug": "new_company",
+                        "categoryId": 1,
+                        "createdAt": "2024-12-16T07:12:58.978Z",
+                        "role_permissions": []
+                    },
+                    {
+                        "id": 5,
+                        "name": "Can track company performance",
+                        "slug": "company_performance",
+                        "categoryId": 1,
+                        "createdAt": "2024-12-16T07:12:58.983Z",
+                        "role_permissions": []
+                    },
+                    {
+                        "id": 6,
+                        "name": "Can add new multiple roles in any company",
+                        "slug": "new_role",
+                        "categoryId": 1,
+                        "createdAt": "2024-12-16T07:12:58.988Z",
+                        "role_permissions": []
+                    },
+                    {
+                        "id": 7,
+                        "name": "Can assign goals and projections to user roles",
+                        "slug": "assign_goals",
+                        "categoryId": 1,
+                        "createdAt": "2024-12-16T07:12:58.993Z",
+                        "role_permissions": []
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Password Policies",
+                "createdAt": "2024-12-16T00:00:00.000Z",
+                "updatedAt": "2024-12-16T00:00:00.000Z",
+                "permissions": [
+                    {
+                        "id": 8,
+                        "name": "First letter must be capital",
+                        "slug": "capital_letter",
+                        "categoryId": 2,
+                        "createdAt": "2024-12-16T07:12:58.997Z",
+                        "role_permissions": []
+                    },
+                    {
+                        "id": 9,
+                        "name": "Password must contain 20 characters length",
+                        "slug": "password_length",
+                        "categoryId": 2,
+                        "createdAt": "2024-12-16T07:12:59.002Z",
+                        "role_permissions": []
+                    },
+                    {
+                        "id": 10,
+                        "name": "Password must contain 1 lowercase letter",
+                        "slug": "password_lowercase",
+                        "categoryId": 2,
+                        "createdAt": "2024-12-16T07:12:59.006Z",
+                        "role_permissions": []
+                    },
+                    {
+                        "id": 11,
+                        "name": "Add special characters in password",
+                        "slug": "special_characters",
+                        "categoryId": 2,
+                        "createdAt": "2024-12-16T07:12:59.011Z",
+                        "role_permissions": []
+                    },
+                    {
+                        "id": 12,
+                        "name": "Must add some numbers in password",
+                        "slug": "numbers_password",
+                        "categoryId": 2,
+                        "createdAt": "2024-12-16T07:12:59.017Z",
+                        "role_permissions": []
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Acess Logs",
+                "createdAt": "2024-12-16T00:00:00.000Z",
+                "updatedAt": "2024-12-16T00:00:00.000Z",
+                "permissions": [
+                    {
+                        "id": 13,
+                        "name": "Track user login activity",
+                        "slug": "user_activity",
+                        "categoryId": 3,
+                        "createdAt": "2024-12-16T07:12:59.026Z",
+                        "role_permissions": []
+                    },
+                    {
+                        "id": 14,
+                        "name": "Get alret of failed login",
+                        "slug": "login_activity",
+                        "categoryId": 3,
+                        "createdAt": "2024-12-16T07:12:59.033Z",
+                        "role_permissions": []
+                    },
+                    {
+                        "id": 15,
+                        "name": "Restrict login with another IP address ",
+                        "slug": "restrict_IP",
+                        "categoryId": 3,
+                        "createdAt": "2024-12-16T07:12:59.041Z",
+                        "role_permissions": []
+                    }
+                ]
+            }
+        ]
+    }
+}

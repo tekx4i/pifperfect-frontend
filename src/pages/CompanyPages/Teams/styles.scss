@@ -1,0 +1,24 @@
+.custom-container table thead tr th:not(:first-child) {
+  text-align: center;
+}
+
+.custom-container table tbody tr td:not(:first-child) {
+  text-align: center;
+}
+
+.custom-container .table-responsive{
+    height: 60vh !important;
+}
+
+
+.custom-container table thead th{
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #ffffff; // White background
+    border-bottom: 2px solid #cccccc; // Light grey border
+    
+}
+
+// .custom-container .table-responsive

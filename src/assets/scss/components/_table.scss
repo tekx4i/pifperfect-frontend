@@ -1,0 +1,259 @@
+// //
+// // _table.scss
+// //
+
+// .table {
+//     >thead {
+//         border-color: $table-border-color;
+//     }
+//     >:not(:first-child) {
+//         border-top-width: $table-border-width;
+//     }
+// }
+
+// .table-nowrap {
+
+//     th,
+//     td {
+//         white-space: nowrap;
+//     }
+// }
+
+// // card table
+
+// .table-card{
+//     margin: (-$card-spacer-y) (-$card-spacer-x);
+
+//     th,
+//     td {
+
+//         &:first-child{
+//             padding-left: 16px;
+//         }
+
+//         &:last-child{
+//             padding-right: 16px;
+//         }
+//     }
+
+//     .table > :not(:first-child) {
+//         border-top-width: $table-border-width;
+//     }
+// }
+
+// @each $color,
+// $value in $theme-colors {
+//     .border-#{$color} {
+//         &.table {
+//             > thead {
+//                 border-color: $value !important;
+//             }
+//         }
+//     }
+//     .table-#{$color} {
+//         &.table {
+//             > thead {
+//                 border-bottom-color:lighten($value, 10%) !important;
+//             }
+//         }
+//     }
+// }
+
+// .table>:not(caption)>*>* {
+//     color: var(--vz-table-color-state), var(--vz-table-color-type, var(--vz-table-color));
+// }
+
+// .table {
+//     .form-check {
+//         padding-left: 0px;
+//         margin-bottom: 0px;
+//         .form-check-input {
+//             margin-left: 0px;
+//             margin-top: 0px;
+//             float: none;
+//             vertical-align: middle;
+//         }
+//     }
+//     .sort {
+//         position: relative;
+//         &::before {
+//             content: "\f035d";
+//             position: absolute;
+//             right: 0.5rem;
+//             top: 18px;
+//             font-size: 0.8rem;
+//             font-family: "Material Design Icons";
+//         }
+//         &::after {
+//             position:absolute;
+//             right: 0.5rem;
+//             content: "\f0360";
+//             font-family: "Material Design Icons";
+//             font-size: 0.8rem;
+//             top: 12px;
+//         }
+//     }
+// }
+
+// -------------------------------------------------
+
+// Fixed Table Header
+.table-wrapper {
+  // max-height: 800px; // Adjust as per your requirement
+  max-height: 60vh; /* Set the desired max height for scrolling */
+  // height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  //   border: 1px solid #dddddd; // Light grey border
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+      th {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #ffffff; // White background
+        border-bottom: 2px solid #cccccc; // Light grey border
+        white-space: nowrap; // Prevent text wrapping
+        &:not(:first-child) {
+          text-align: center !important;
+          // background-color: pink !important;
+        }
+      }
+    }
+
+    tbody {
+      td {
+        white-space: nowrap; // Prevent text wrapping
+        border-top: 1px solid #dddddd; // Light grey border
+        // background-color: red;
+        // text-align: center !important;
+        // background-color: green !important;
+        &:not(:first-child) {
+          text-align: center !important;
+          // background-color: pink !important;
+        }
+      }
+    }
+  }
+}
+
+// Integration with Existing Styles
+.table {
+  > thead {
+    border-color: #dddddd;
+
+    th {
+      &.fixed {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #ffffff; // White background
+        border-bottom: 2px solid #cccccc; // Light grey border
+      }
+    }
+  }
+
+  > :not(:first-child) {
+    border-top-width: 1px;
+  }
+}
+
+.table-nowrap {
+  th,
+  td {
+    white-space: nowrap; // Prevent text wrapping
+  }
+}
+
+// Card Table Adjustments
+.table-card {
+  margin: -16px -16px; // Replace with exact card spacing if necessary
+
+  th,
+  td {
+    &:first-child {
+      padding-left: 16px;
+    }
+
+    &:last-child {
+      padding-right: 16px;
+    }
+  }
+
+  .table > :not(:first-child) {
+    border-top-width: 1px;
+  }
+}
+
+// Color Variants
+.table > :not(caption) > * > * {
+  color: #333333; // Dark grey text
+}
+
+// Form Check Integration
+.table {
+  .form-check {
+    padding-left: 0px;
+    margin-bottom: 0px;
+
+    .form-check-input {
+      margin-left: 0px;
+      margin-top: 0px;
+      float: none;
+      vertical-align: middle;
+    }
+  }
+
+  .sort {
+    position: relative;
+
+    &::before {
+      content: "\f035d";
+      position: absolute;
+      right: 0.5rem;
+      top: 18px;
+      font-size: 0.8rem;
+      font-family: "Material Design Icons";
+    }
+
+    &::after {
+      position: absolute;
+      right: 0.5rem;
+      content: "\f0360";
+      font-family: "Material Design Icons";
+      font-size: 0.8rem;
+      top: 12px;
+    }
+  }
+}
+
+.table-responsive {
+  position: relative; /* Ensure the container is properly positioned */
+  overflow: auto; /* Ensure content is scrollable without overflow issues */
+  box-sizing: border-box; /* Include padding and border in the element's width/height */
+  //   border: 2px solid #08204233 !important;
+  border: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px; /* Adjust vertical scrollbar width */
+  height: 5px; /* Adjust horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Background color of the scrollbar track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #007bff; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Thumb color on hover */
+}

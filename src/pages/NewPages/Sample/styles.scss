@@ -1,0 +1,274 @@
+.dashboard-container {
+    padding: 32px;
+    background: #f5f6fa;
+  }
+  
+  .header-row {
+    margin-bottom: 32px;
+  
+    .greeting-section {
+      h3 {
+        font-weight: 700;
+        color: #2d3436;
+      }
+  
+      .subheading {
+        color: #636e72;
+      }
+    }
+  }
+  
+  .search-section {
+    .search-container {
+      display: flex;
+      gap: 16px;
+  
+      .search-input {
+        flex: 1;
+        border-radius: 8px;
+      }
+  
+      .button-group {
+        display: flex;
+        gap: 8px;
+  
+        .btn {
+          border-radius: 8px;
+          padding: 8px 16px;
+        }
+      }
+    }
+  }
+  
+  .metric-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    .metric-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+  
+      .metric-title {
+        font-size: 14px;
+        color: #636e72;
+      }
+  
+      .metric-percentage {
+        font-size: 14px;
+        font-weight: 600;
+  
+        &.positive {
+          color: #2ecc71;
+        }
+        &.neutral {
+          color: #3498db;
+        }
+        &.negative {
+          color: #e74c3c;
+        }
+      }
+    }
+  
+    .metric-value {
+      //   display:"flex";
+      //   justify-content:"start";
+      font-size: 24px;
+      font-weight: 700;
+      color: #2d3436;
+    }
+  }
+  
+  .overview-section {
+    margin-top: 32px;
+  
+    .overview-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+  
+      h4 {
+        font-weight: 700;
+        color: #2d3436;
+      }
+  
+      .sort-by {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+  
+        span {
+          color: #636e72;
+        }
+  
+        .form-select {
+          width: auto;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+  
+  .performance-metrics {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    .metric-item {
+      text-align: center;
+  
+      .metric-label {
+        color: #636e72;
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+  
+      .metric-value {
+        font-weight: 600;
+        color: #2d3436;
+  
+        &.negative {
+          color: #e74c3c;
+        }
+      }
+    }
+  }
+  
+  .succ {
+    background-color: "#DAF4F0";
+  }
+  .line-chart-container {
+    background: white;
+    padding: 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    .chart-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 32px;
+  
+      h2 {
+        font-size: 25px;
+        color: #2d3436;
+      }
+  
+      .current-values {
+        display: flex;
+        gap: 32px;
+  
+        .value-item {
+          text-align: center;
+  
+          .value {
+            display: block;
+            font-size: 32px;
+            font-weight: 600;
+            color: #2d3436;
+          }
+          .label {
+            font-size: 16px;
+            color: #636e72;
+          }
+        }
+      }
+    }
+  
+    .chart-wrapper {
+      position: relative;
+      overflow-x: auto;
+      width: 100%;
+  
+      svg {
+        width: 100%;
+        height: auto;
+  
+        .axis-label {
+          font-size: 13px !important;
+          fill: #636e72;
+        }
+  
+        .grid-line {
+          stroke: #eee;
+          stroke-width: 1;
+        }
+  
+        .revenue-line {
+          stroke: #4caf50;
+          stroke-width: 2;
+        }
+  
+        .expense-line {
+          stroke: #f44336;
+          stroke-width: 2;
+        }
+  
+        .revenue-point {
+          fill: #4caf50;
+        }
+  
+        .expense-point {
+          fill: #f44336;
+        }
+      }
+    }
+  
+    .chart-legend {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 1rem;
+  
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+  
+        .color-dot {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+  
+          &.revenue {
+            background: #4caf50;
+          }
+  
+          &.expense {
+            background: #f44336;
+          }
+        }
+      }
+    }
+  }
+  .metrics-row .col-md-3 {
+    max-width: 250px;
+    // max-width: 22%;
+  }
+  
+  // dropdown metric
+  
+  .custom-select {
+    background-color: #f8f9fa; /* Light grey */
+    border: 1px solid #ced4da; /* Bootstrap default border */
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #495057;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom-select:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  

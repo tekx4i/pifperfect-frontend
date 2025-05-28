@@ -1,0 +1,45 @@
+.submit-btns {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+#role_based {
+  .submit-btns {
+    .custom_submit_btn {
+      padding: 15px 48px;
+    }
+  }
+}
+
+
+.swal-footer{
+  text-align: center;
+}
+
+.swal-button--confirm {
+  background-color: red;
+}
+.swal-button--confirm:hover {
+  background-color: rgb(235, 25, 25) !important;
+
+}
+
+
+/* Remove the outline from SweetAlert buttons */
+.swal-button--confirm:focus {
+  outline: none;
+}
+
+
+.swal-text{
+  text-align: center;
+}
+
+.k-checkbox-label{
+  margin-left: 5px;
+}
+
+.no-underline{
+  text-decoration: none;
+}

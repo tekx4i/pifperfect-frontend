@@ -1,0 +1,93 @@
+#billing-detail {
+  .payment-type {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    .payment-label {
+      align-self: center;
+      margin-bottom: 0;
+    }
+    .stripe-card {
+      display: flex;
+      gap: 10px;
+      h5 {
+        margin-bottom: 0;
+        align-self: center;
+      }
+      span {
+        align-self: center;
+        cursor: pointer;
+      }
+    }
+  }
+  .switch_custom {
+    border-radius: 20px;
+    .payment-history {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 14px 15px;
+      .payment-history-label {
+        font-size: 16px;
+        align-self: center;
+        margin-bottom: 0;
+      }
+      .stripe-payment-label {
+        color: #4d9bf2;
+        font-family: var(--montserrat);
+        font-size: 25px !important;
+        font-weight: 700;
+        line-height: 34.5px;
+      }
+    }
+    .companyselect_input {
+      position: relative;
+    }
+  }
+  .subscription-management {
+    margin: 40px 0;
+  }
+  .card-detailing {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ced2d9;
+    border-radius: 20px;
+    padding: 22px 26px;
+    margin-bottom: 28px;
+    h6 {
+      align-self: center;
+      font-family: var(--montserrat);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22.08px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #252525;
+      margin-bottom: 0;
+      display: flex;
+      gap: 10px;
+    }
+    h5 {
+      align-self: center;
+      margin-bottom: 0;
+      font-family: Montserrat;
+      font-size: 20px !important;
+      font-weight: 600;
+      line-height: 27.6px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #252525;
+    }
+  }
+}
+
+.form-floating > .form-select {
+  width: 10px !important;
+}
+
+.form-floating > label {
+  top: -14px !important;
+  left: -3px;
+}

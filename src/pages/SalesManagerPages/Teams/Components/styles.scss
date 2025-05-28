@@ -1,0 +1,31 @@
+#add-company {
+  .custom_submit_btn {
+    padding: 15px 48px !important;
+  }
+}
+
+#edit-company {
+  .image-preview {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    img {
+      width: 200px;
+      height: 150px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .remove-image-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #fff; /* Red color */
+      background-color: #f44336;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      border-radius: 100px;
+      border: 0;
+      padding: 0px 6px;
+    }
+  }
+}

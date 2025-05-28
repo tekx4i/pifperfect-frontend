@@ -1,0 +1,165 @@
+#user-management {
+  .user_notifications {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    h4 {
+      font-size: 25px;
+      font-weight: 600;
+      color: #252525;
+      font-family: var(--montserrat);
+      margin-bottom: 28px;
+    }
+    .notification_details {
+      border: 1px solid #d4d7dd;
+      padding: 24px;
+      border-radius: 20px;
+      .text-detail {
+        border-bottom: 1px solid #d4d7dd;
+        display: flex;
+        justify-content: space-between;
+      }
+      ul {
+        li {
+          svg {
+            margin-right: 10px;
+          }
+          &:last-child {
+            margin-bottom: 0;
+            border-bottom: 0;
+            p {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      li,
+      p {
+        font-size: 16px;
+        line-height: 17px;
+        margin-bottom: 14px;
+        font-weight: 400;
+      }
+      .time {
+        text-align: end;
+        font-weight: 500;
+      }
+    }
+  }
+  .authenticate_now {
+    border-radius: 20px;
+    background-color: #f6fafe;
+    padding: 28px 30px;
+    display: flex;
+    justify-content: space-between;
+    h4 {
+      align-self: center;
+      margin-bottom: 0;
+      font-size: 25px;
+      font-family: var(--montserrat);
+      color: #252525;
+    }
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+}
+
+.table-responsive {
+  position: relative; /* Ensure the container is properly positioned */
+  overflow: auto; /* Ensure content is scrollable without overflow issues */
+  box-sizing: border-box; /* Include padding and border in the element's width/height */
+  // border: 2PX RED SOLID;
+}
+
+.table-responsive::-webkit-scrollbar {
+  width: 5px; /* Adjust vertical scrollbar width */
+  height: 5px; /* Adjust horizontal scrollbar height */
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Background color of the scrollbar track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #007bff; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Thumb color on hover */
+}
+
+.action-btn.delete {
+  // background-color: red;
+  color: white;
+}
+
+.action-btn.success {
+  background-color: rgba(144, 238, 144, 0.5);
+    color: white;
+}
+
+
+// 
+
+.hover-popup {
+  width: 200px;
+  height:100px;
+  background: white;
+  border-radius: 5px;
+  font-size: 14px;
+  list-style: none;
+}
+.hover-popup ul {
+  padding: 0;
+  margin: 0;
+}
+.hover-popup li {
+  padding: 5px 10px;
+  border-bottom: 1px solid #eee;
+}
+.hover-popup li:last-child {
+  border-bottom: none;
+}
+
+
+// 
+
+.cancel-btn {
+  background-color: gray !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.activate-btn {
+  background-color: green !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.activate-btn:hover {
+  background-color: green !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.deactivate-btn {
+  background-color: red !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.swal-button--confirm{
+  background-color: #0056b3;
+}
